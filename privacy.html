@@ -1,26 +1,257 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Privacy Policy</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — VisionMessenger</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #080810;
+      --surface: #10101e;
+      --border: rgba(255,255,255,0.07);
+      --purple: #7c3aed;
+      --purple-light: #a78bfa;
+      --text: #f1f5f9;
+      --muted: #94a3b8;
+      --faint: #475569;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: var(--purple-light); }
+    a:hover { text-decoration: underline; }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 2rem;
+      height: 64px;
+      background: rgba(8,8,16,0.9);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text);
+      text-decoration: none;
+      letter-spacing: -0.02em;
+    }
+
+    .nav-logo:hover { text-decoration: none; }
+
+    .nav-back {
+      color: var(--muted);
+      font-size: 0.85rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .doc-wrap {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem 6rem;
+    }
+
+    .doc-header {
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .doc-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--purple-light);
+      margin-bottom: 0.75rem;
+    }
+
+    .doc-header h1 {
+      font-size: 2.4rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-bottom: 0.5rem;
+    }
+
+    .doc-header .updated {
+      color: var(--faint);
+      font-size: 0.85rem;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin: 2.5rem 0 0.75rem;
+      color: var(--text);
+    }
+
+    p, li {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 0.75rem;
+    }
+
+    ul {
+      padding-left: 1.4rem;
+      margin-bottom: 0.75rem;
+    }
+
+    li { margin-bottom: 0.4rem; }
+
+    .highlight-box {
+      background: rgba(124,58,237,0.08);
+      border: 1px solid rgba(124,58,237,0.25);
+      border-radius: 12px;
+      padding: 1.2rem 1.5rem;
+      margin: 1.5rem 0;
+    }
+
+    .highlight-box p { color: var(--text); margin: 0; font-size: 0.9rem; }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem 1.5rem;
+      text-align: center;
+      color: var(--faint);
+      font-size: 0.85rem;
+    }
+
+    footer a { color: var(--faint); }
+    footer a:hover { color: var(--muted); }
+  </style>
 </head>
 <body>
-  <h1>Privacy Policy</h1>
 
-  <p>
-    VisionMessenger collects information necessary to provide messaging and
-    account services.
-  </p>
+  <nav>
+    <a href="index.html" class="nav-logo">
+      <svg width="26" height="26" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="8" fill="url(#lg2)"/><path d="M14 7C10.13 7 7 10.13 7 14c0 1.55.49 2.99 1.33 4.16L7 21l2.84-1.33A6.96 6.96 0 0014 21c3.87 0 7-3.13 7-7s-3.13-7-7-7z" fill="white" fill-opacity="0.95"/><path d="M11 13.5h6M11 16h4" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round"/><defs><linearGradient id="lg2" x1="0" y1="0" x2="28" y2="28"><stop stop-color="#7c3aed"/><stop offset="1" stop-color="#3b82f6"/></linearGradient></defs></svg>
+      VisionMessenger
+    </a>
+    <a href="index.html" class="nav-back">
+      ← Back to home
+    </a>
+  </nav>
 
-  <p>
-    Phone numbers may be used for account verification and contact discovery.
-  </p>
+  <div class="doc-wrap">
+    <div class="doc-header">
+      <p class="doc-label">Legal</p>
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last updated: June 16, 2026</p>
+    </div>
 
-  <p>
-    SMS messages are used for verification and security notifications only.
-  </p>
+    <div class="highlight-box">
+      <p>
+        VisionMessenger is built on a simple principle: your private conversations should stay private.
+        This policy explains what we collect, why we collect it, and how we protect it.
+      </p>
+    </div>
 
-  <p>
-    Users may contact support@visionmessenger.app with privacy questions.
-  </p>
+    <h2>1. Information We Collect</h2>
+    <p>We collect the minimum information necessary to operate the service:</p>
+    <ul>
+      <li><strong>Phone number</strong> — used to create and verify your account, and to allow other users to find you if they have your number in their contacts.</li>
+      <li><strong>Device information</strong> — device model and OS version, used for troubleshooting and push notification delivery.</li>
+      <li><strong>Usage metadata</strong> — approximate timestamps of when messages are sent and delivered (not message content).</li>
+    </ul>
+    <p>We do <strong>not</strong> collect or store the content of your messages, voice notes, or calls. These are end-to-end encrypted and only accessible to you and your intended recipients.</p>
+
+    <h2>2. How We Use SMS</h2>
+    <p>
+      SMS text messages are used exclusively for:
+    </p>
+    <ul>
+      <li>Account verification when you sign up or log in</li>
+      <li>Security alerts and two-factor authentication codes</li>
+    </ul>
+    <p>We will never send you marketing messages, promotions, or unsolicited SMS communications.</p>
+
+    <h2>3. End-to-End Encryption</h2>
+    <p>
+      All messages, media, and voice notes exchanged through VisionMessenger are protected by
+      end-to-end encryption. This means:
+    </p>
+    <ul>
+      <li>Messages are encrypted on your device before transmission</li>
+      <li>Only the intended recipient can decrypt and read them</li>
+      <li>VisionMessenger servers never have access to your message content</li>
+      <li>Encrypted calls are established directly between participants</li>
+    </ul>
+
+    <h2>4. Data Sharing</h2>
+    <p>We do not sell, rent, or trade your personal information. We may share limited data only in these circumstances:</p>
+    <ul>
+      <li><strong>Legal compliance</strong> — if required by a valid court order or applicable law. Because message content is end-to-end encrypted, we cannot provide it even if compelled to do so.</li>
+      <li><strong>Service providers</strong> — infrastructure partners (cloud hosting, push notification services) who process data strictly on our behalf and under confidentiality agreements.</li>
+    </ul>
+
+    <h2>5. Data Retention</h2>
+    <p>
+      Message content is not stored on our servers after delivery. Account metadata (phone number, device tokens)
+      is retained for as long as your account is active. You may request deletion of your account and associated data
+      at any time by contacting support.
+    </p>
+
+    <h2>6. Your Rights</h2>
+    <p>You have the right to:</p>
+    <ul>
+      <li>Access the personal data we hold about you</li>
+      <li>Request correction of inaccurate data</li>
+      <li>Request deletion of your account and data</li>
+      <li>Withdraw consent for optional data processing</li>
+    </ul>
+    <p>To exercise any of these rights, contact us at <a href="mailto:support@visionmessenger.app">support@visionmessenger.app</a>.</p>
+
+    <h2>7. Security</h2>
+    <p>
+      We use industry-standard security practices including TLS encryption for all data in transit,
+      encrypted storage for account data at rest, and regular security reviews. However, no system
+      is perfectly secure — we encourage you to use a strong device passcode and keep your app updated.
+    </p>
+
+    <h2>8. Children's Privacy</h2>
+    <p>
+      VisionMessenger is not intended for users under the age of 13. We do not knowingly collect
+      personal information from children. If you believe a child has provided us with personal
+      information, please contact us immediately.
+    </p>
+
+    <h2>9. Changes to This Policy</h2>
+    <p>
+      We may update this policy from time to time. When we do, we will update the date at the top
+      of this page. Continued use of VisionMessenger after changes constitutes acceptance of the
+      updated policy.
+    </p>
+
+    <h2>10. Contact</h2>
+    <p>
+      Questions about this policy? Reach us at
+      <a href="mailto:support@visionmessenger.app">support@visionmessenger.app</a>.
+    </p>
+  </div>
+
+  <footer>
+    <a href="index.html">Home</a> &nbsp;·&nbsp;
+    <a href="terms.html">Terms of Service</a> &nbsp;·&nbsp;
+    <a href="mailto:support@visionmessenger.app">support@visionmessenger.app</a>
+    <br/><br/>
+    &copy; 2026 VisionMessenger. All rights reserved.
+  </footer>
+
 </body>
 </html>
